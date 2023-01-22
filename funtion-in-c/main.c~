@@ -1,0 +1,44 @@
+#include <stdio.h>
+/*
+Add `int max_of_four(int a, int b, int c, int d)` here.
+*/
+int max_of_four(int dataInput[5] );
+int main() {
+    int dataInput[5];
+    scanf("%d %d %d %d", &dataInput[0],&dataInput[1], &dataInput[2] , &dataInput[3]);
+    int ans = max_of_four(dataInput);
+    printf("%d", ans);
+    
+    return 0;
+}
+
+
+
+
+int max_of_four(int dataInput[] ){
+  int numMax = dataInput[3];
+  for( int i  = 0 ; i < 4 ; i++){
+    if(  dataInput[i++] < dataInput[i] ){
+	int datamemory[5];
+	for(int d = 0 ; d < 4 ; d++){
+	  if(d == i){
+	    datamemory[d]  = dataInput[i++];
+	    d = d+1 ;
+	    datamemory[d]  = dataInput[i];
+	  }
+	  datamemory[d]=dataInput[d];
+	}
+	numMax =  max_of_four(datamemory);
+    }
+
+  }
+  return(2);
+}
+
+void intercambia(int a[]) //definición de la función
+{                            
+   int c;                   
+   c=a[0];
+   a[0]=a[1];
+   a[1]=c;
+}

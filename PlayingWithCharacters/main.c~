@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+void main(){
+
+  char datosIntput[10][1000];
+  printf("hola Como estas escribe algo  ");
+  while(1){
+    printf("hola llegamos ");
+    scanf("%[^\n]s",datosIntput[i]);
+    
+  }
+
+  printf("\n %s",datosIntput);
+
+}

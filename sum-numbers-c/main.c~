@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void main(){
+  int numbersInt[4];
+  float numbersFloat[4];
+  scanf("%d %d",numbersInt[0],numbersInt[1]);
+  scanf("%f %f",numbersFloat[0],numbersFloat[1]);
+  prinf("%d\n",numbersInt[0]+numbersInt[1]);
+  prinf("%f",numbersFloat[0]+numbersFloat[1]);
+  
+  
+}
